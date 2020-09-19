@@ -1,0 +1,11 @@
+['transmission_encoded','year','fuel_encoded','owner_encoded','km_driven'
+
+4 petrol 1 diesel 0 cng 2 electic 3 LPG
+
+0 automatic 1 manual
+
+first owner 0 
+second owner 2
+foruth and above owner 1
+third owner 4
+Test Drive Car 3
