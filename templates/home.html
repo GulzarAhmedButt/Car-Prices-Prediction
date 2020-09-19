@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="jumbotron text-center">
+  <h1>Predict Price of a Car</h1>
+  <p class="lead">This Application is based on Machine Learning which is used to predict the Price of a Car based on its attributes.</p>
+</div>
+{% from "includes/_formhelpers.html" import render_field  %}
+<form class="form-group text-center center_div" action="/predict" method="post">
+  <div class="row">
+    <div class="col col-auto">
+      {{ render_field(form.transmission,class_ = "form-control")}}
+    </div>
+    <div class="col col-auto">
+      {{ render_field(form.Year,class_ = "form-control")}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-auto">
+      {{ render_field(form.fuel,class_ = "form-control")}}
+    </div>
+    <div class="col col-auto">
+      {{ render_field(form.Owner,class_ = "form-control")}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col col-auto">
+      {{ render_field(form.Km_driven,class_ = "form-control")}}
+    </div>
+  </div>
+
+  <p><input type="submit" class="btn btn-primary submit_button" value="Submit"></p>
+</form>
+
+<h2 style="color:white;">{{ prediction_text }}</h2>
+{% endblock %}

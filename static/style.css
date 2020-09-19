@@ -1,0 +1,19 @@
+body
+{
+  background-color: rgb(6, 28, 89,0.9);
+}
+
+.center_div{
+    margin: 0 auto!important;
+    width:30%!important; /* value of your choice which suits your alignment */
+}
+
+.submit_button
+{
+  margin-top: 10%!important;
+}
+
+form div
+{
+  color: white!important;
+}
